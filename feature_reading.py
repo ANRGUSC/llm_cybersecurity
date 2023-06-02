@@ -32,13 +32,3 @@ with open('output.txt', 'w') as file:
 # write data into json file
 with open('output.json', 'w') as file:
     file.write(json_data)
-
-API_KEY = "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"
-openai.api_key = API_KEY
-
-model_id ='FINE_TUNED_MODEL'
-
-import openai
-openai.Completion.create(
-    model=model_id,
-    prompt=YOUR_PROMPT)
