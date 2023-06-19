@@ -50,10 +50,9 @@ def formatting(newFile):
             file.write('\n')
 
 
-# Read from data set, and save data of each 50 nodes in one time stamp in one list
-
-original_file = 'train_data/1.4_8h.csv'
-node_size = 50
-data, attacked = read_csv(original_file, node_size)
-new_file = "train_data/train_1.4_8h.csv"
-formatting(new_file)
+if __name__ == '__main__':
+    original_file = 'train_data/1.4_8h.csv'
+    node_size = 50
+    data, attacked = read_csv(original_file, node_size)
+    new_file = "train_data/train_1.4_8h.csv"
+    formatting(new_file)
