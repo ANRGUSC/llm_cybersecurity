@@ -5,7 +5,7 @@ import openai
 import random
 import pandas as pd
 
-openai.api_key = "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"
+openai.api_key = ""
 
 
 def getPrompt(path):
